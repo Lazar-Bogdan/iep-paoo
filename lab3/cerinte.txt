@@ -1,0 +1,17 @@
+item4  
+    - toate obiectele sa fie initialized
+    - prin constructor
+        construtor(int a,int b): aici initializezi {}
+        cati vrei tu
+
+item5
+    - in constructor/desc sa facem mesaje, si sa avem exemple de clase derivate
+    - copyconstructor
+    - moveconstructor
+
+item6
+    - cum se dezactiveaza copierea unui obiectele:
+        constructor(const &A) = delete;
+
+
+!! tema incarcata pe git !!
