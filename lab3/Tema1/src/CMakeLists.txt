@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.0)
 
-add_subdirectory(Forma)
-add_subdirectory(Hexagon)
-add_subdirectory(Patrat)
-add_subdirectory(Triunghi)
+add_subdirectory(Bautura)
+add_subdirectory(Cafea)
+add_subdirectory(Mancare)
+add_subdirectory(Meniu)
 
 add_library(${PROJECT}-main OBJECT 
     main.cpp
@@ -15,10 +15,10 @@ target_include_directories(${PROJECT}-main
 )
 
 set(TARGET_OBJECT
-    Forma/Forma.cpp
-    Hexagon/Hexagon.cpp
-    Patrat/Patrat.cpp
-    Triunghi/triunghi.cpp
+    Bautura/Bautura.cpp
+    Cafea/Cafea.cpp
+    Mancare/Mancare.cpp
+    Meniu/Meniu.cpp
 )
 
 add_library(lib STATIC ${TARGET_OBJECT})
