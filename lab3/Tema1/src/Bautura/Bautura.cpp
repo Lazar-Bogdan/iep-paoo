@@ -20,7 +20,7 @@ Bautura::Bautura(const Bautura& p)
 Bautura::Bautura(Bautura&& p)
 {
     std::cout << "Move constructor called" << std::endl;
-    this->tipBautura_ = p.tipBautura_;
+    this->tipBautura_ = std::move(p.tipBautura_);
 }
 
 Bautura::~Bautura()
