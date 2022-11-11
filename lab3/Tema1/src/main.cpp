@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
     Cafea cafea3 = std::move(cafea2);
     cafea3.whatBatura();
     cafea2.whatBatura();
+    Cafea cafea4(std::move(cafea2));
     // std::cout << "Tip Meniu " << cafea3.whatBatura() << std::endl;
 
     Mancare mancare1("cina",25.99,"Calamar");
