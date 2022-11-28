@@ -9,7 +9,7 @@ class Apa: public Bautura{
         Apa();
         ~Apa();
         Apa& operator=(const Cafea& a);
-        Apa& operator=(Apa a);
+        Apa& operator=(const Apa& a);
         void seeCantiate();
         float cantitate;
     private:

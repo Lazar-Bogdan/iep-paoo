@@ -28,7 +28,7 @@ void::Apa::seeCantiate()
     std::cout << "Cantitatea este : " << cantitate << std::endl;
 }
 
-Apa&::Apa::operator=(Apa a)
+Apa&::Apa::operator=(const Apa& a)
 {
     std::cout << "copy ass from apa to apa " << std::endl;
     this->cantitate = a.cantitate;

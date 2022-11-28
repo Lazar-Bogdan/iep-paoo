@@ -1,5 +1,6 @@
 #include "../../include/Meniu.hpp"
 
+
 Meniu::Meniu(std::string Meniu, float pret): 
     tipMeniu(Meniu), pret(pret)
 {
@@ -34,3 +35,25 @@ int::Meniu::returneazaPretTotal(){
     return pret;
 }
 
+void::Meniu::setValues(std::string tpMeniu, float prt)
+{
+    std::cout << "setter called from ass operator" << std::endl;
+    tipMeniu = tpMeniu;
+    pret = prt;
+}
+
+// std::string::Meniu::getTipMeniu()
+// {
+//     return tipMeniu;
+// }
+
+float::Meniu::getPretMeniu()
+{
+    return pret;
+}
+
+void::Meniu::seeValuesOfMeniu()
+{
+    std::cout << "Tip : " << tipMeniu << std::endl;
+    std::cout << "Pret : " << pret << std::endl;
+}

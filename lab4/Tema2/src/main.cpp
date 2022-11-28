@@ -12,18 +12,18 @@ int main(int argc, char *argv[])
     Meniu meniu2;
 
     Cafea cafea1("dimineata",5,"CALDA",3,500);
-    Cafea cafea2 = cafea1;
-    Cafea cafea3 = std::move(cafea2);
-    cafea3.whatBatura();
-    cafea2.whatBatura();
+    // Cafea cafea2 = cafea1;
+    // Cafea cafea3 = std::move(cafea2);
+    // cafea3.whatBatura();
+    // cafea2.whatBatura();
     // Cafea cafea4(std::move(cafea2));
     // std::cout << "Tip Meniu " << cafea3.whatBatura() << std::endl;
 
     Mancare mancare1("cina",25.99,"Calamar");
-    mancare1.seeIfReady();
+    // mancare1.seeIfReady();
     mancare1.setReady();
-    mancare1.seeIfReady();
-
+    //mancare1.seeIfReady();
+    //mancare1.seeValuesOfMeniu();
     // copy ass operator
     Mancare mancare2, mancare3, mancare4;
     std::cout << "first" << std::endl;
@@ -42,5 +42,12 @@ int main(int argc, char *argv[])
     apa2.seeCantiate();
     apa2=apa1;
     apa2.seeCantiate();
+
+    std::cout << "copy all from childs " << std::endl;
+    mancare1.seeValuesOfMeniu();
+    Mancare mancaretest;
+    mancaretest.seeValuesOfMeniu();
+    mancaretest = mancare1;
+    mancaretest.seeValuesOfMeniu();
     return 0;
 }
